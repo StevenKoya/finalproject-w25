@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CookMate - Accessible Recipe Finder</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>CookMate</h1>
+    <nav>
+      <ul>
+        <li><a href="page_1.html">Spaghetti</a></li>
+        <li><a href="page_2.html">Veggie Stir-Fry</a></li>
+        <li><a href="page_3.html">GF Pancakes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Find Your Next Favorite Recipe</h2>
+
+    <label for="search" class="visually-hidden">Search recipes</label>
+    <input type="text" id="search" placeholder="Search by ingredient..." aria-label="Search recipes by ingredient">
+
+    <button id="toggle-contrast">Toggle High Contrast</button>
+
+    <section aria-label="Recipe Previews" class="recipe-grid">
+      <article>
+        <img src="images/spaghetti.jpg" alt="A bowl of spaghetti with tomato sauce">
+        <h3><a href="page_1.html">Spaghetti Bolognese</a></h3>
+        <p>Classic meat-based pasta with herbs.</p>
+      </article>
+
+      <article>
+        <img src="images/veggie_stirfry.jpg" alt="Colorful stir-fried vegetables">
+        <h3><a href="page_2.html">Veggie Stir-Fry</a></h3>
+        <p>Quick and healthy vegetarian stir-fry.</p>
+      </article>
+
+      <article>
+        <img src="images/gluten_free_pancakes.jpg" alt="Stack of gluten-free pancakes">
+        <h3><a href="page_3.html">Gluten-Free Pancakes</a></h3>
+        <p>Fluffy, gluten-free, and delicious.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CookMate | Made with accessibility in mind</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
