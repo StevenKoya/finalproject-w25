@@ -1,56 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CookMate - Accessible Recipe Finder</title>
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eevee Evolutions</title>
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- JS Libraries -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
+
+    <!-- Home Page -->
+    <div data-role="page" id="home">
+        <a href="#main" class="skip-main">Skip to Main Content</a>
+
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home" class="logo">
+                            Home
+                        </a>
+                    </li>
+                    <li><a href="#evolutions">Evolutions</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main">
+            <div class="home-block">
+                <h1>Welcome to the World of Eevee!</h1>
+                <p>Explore Eevee’s magical evolutions and their elemental powers.</p>
+                <a href="#evolutions" class="home-button">Discover Evolutions</a>
+            </div>
+        </main>
+    </div>
+
+    <!-- Evolutions Page -->
+<div data-role="page" id="evolutions">
+  <a href="#main2" class="skip-main">Skip to Main Content</a>
+
   <header>
-    <h1>CookMate</h1>
     <nav>
       <ul>
-        <li><a href="page_1.html">Spaghetti</a></li>
-        <li><a href="page_2.html">Veggie Stir-Fry</a></li>
-        <li><a href="page_3.html">GF Pancakes</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#evolutions" class="active">Evolutions</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <h1>Eevee Evolutions</h1>
   </header>
 
-  <main>
-    <h2>Find Your Next Favorite Recipe</h2>
+  <main id="main2" style="font-family: 'Poppins', sans-serif;">
+    <div style="max-width: 800px; margin: 0 auto; padding: 20px; background-color: rgba(0,0,0,0.5); border-radius: 10px;">
+      <p style="font-size: 1.2em; color: #fff;">
+        Explore the many ways Eevee can evolve based on its environment, time of day, friendship level, or special evolutionary stones. Swipe or click through each card below to discover the strengths, weaknesses, and evolution methods of each form!
+      </p>
 
-    <label for="search" class="visually-hidden">Search recipes</label>
-    <input type="text" id="search" placeholder="Search by ingredient..." aria-label="Search recipes by ingredient">
+      <div style="margin: 30px 0;">
+        <img src="images/eevee.jpg" alt="Pokéball divider" style="width: 50px; animation: pulse 1.5s infinite;">
+      </div>
+    </div>
 
-    <button id="toggle-contrast">Toggle High Contrast</button>
-
-    <section aria-label="Recipe Previews" class="recipe-grid">
-      <article>
-        <img src="images/spaghetti.jpg" alt="A bowl of spaghetti with tomato sauce">
-        <h3><a href="page_1.html">Spaghetti Bolognese</a></h3>
-        <p>Classic meat-based pasta with herbs.</p>
-      </article>
-
-      <article>
-        <img src="images/veggie_stirfry.jpg" alt="Colorful stir-fried vegetables">
-        <h3><a href="page_2.html">Veggie Stir-Fry</a></h3>
-        <p>Quick and healthy vegetarian stir-fry.</p>
-      </article>
-
-      <article>
-        <img src="images/gluten_free_pancakes.jpg" alt="Stack of gluten-free pancakes">
-        <h3><a href="page_3.html">Gluten-Free Pancakes</a></h3>
-        <p>Fluffy, gluten-free, and delicious.</p>
-      </article>
-    </section>
+    <section id="evo-cards" class="evo-container" aria-label="Eevee Evolution Cards"></section>
   </main>
+</div>
 
-  <footer>
-    <p>&copy; 2025 CookMate | Made with accessibility in mind</p>
-  </footer>
+    <!-- About Page -->
+<div data-role="page" id="about">
+  <a href="#main3" class="skip-main">Skip to Main Content</a>
 
-  <script src="script.js"></script>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#evolutions">Evolutions</a></li>
+        <li><a href="#about" class="active">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <h1>About This Project</h1>
+  </header>
+
+  <main id="main3" style="font-family: 'Poppins', sans-serif; font-size: 1.1em; max-width: 800px; margin: auto; padding: 20px; background-color: rgba(0, 0, 0, 0.5); border-radius: 10px;">
+    <p>
+      This final project was created for SI 339: Web Design & Accessibility at the University of Michigan. It is a fan-made educational website that explores the different evolutions of the beloved Pokémon, Eevee.
+    </p>
+
+    <p>
+      The site showcases each Eeveelution, its type, combat strengths and weaknesses, and the method required for evolution. It is fully interactive and built using HTML, CSS, JavaScript, and jQuery Mobile. The JavaScript dynamically displays evolution data, allowing users to swipe or click through each evolution card in a user-friendly format.
+    </p>
+
+    <p>
+      Special attention was given to visual accessibility and responsive design. The site includes keyboard navigation support, semantic structure, color contrast considerations, and scalable components to ensure it’s easy to use on both desktop and mobile.
+    </p>
+
+    <p>
+      Beyond simply listing evolutions, this project is meant to demonstrate the ability to combine functional code with engaging visuals and accessible design practices. Whether you're a Pokémon fan, a beginner web developer, or a curious visitor, we hope this site helps you appreciate the magic and variety of Eevee.
+    </p>
+
+    <p style="font-weight: bold; font-size: 1.2em; margin-top: 20px;">
+      Technologies Used:
+    </p>
+    <ul style="text-align: left; max-width: 600px; margin: auto;">
+      <li>HTML5 + CSS3</li>
+      <li>jQuery & jQuery Mobile</li>
+      <li>JavaScript DOM Manipulation</li>
+      <li>Responsive & Accessible Design Techniques</li>
+    </ul>
+  </main>
+</div>
+
+    <!-- Contact Page -->
+<div data-role="page" id="contact">
+  <a href="#main4" class="skip-main">Skip to Main Content</a>
+
+  <header>
+      <nav>
+          <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#evolutions">Evolutions</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact" class="active">Contact</a></li>
+          </ul>
+      </nav>
+      <h1>Contact</h1>
+  </header>
+
+  <main id="main4">
+      <div class="contact-block">
+          <p class="contact-text">Created by <strong>Steven Nguyen</strong></p>
+          <p class="contact-text"><a href="mailto:your.email@example.com">Email Me</a></p>
+          <p class="contact-text"><a href="https://github.com/StevenKoya" target="_blank">GitHub</a></p>
+      </div>
+  </main>
+</div>
+
+    <!-- Local JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
+

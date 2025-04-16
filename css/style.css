@@ -1,0 +1,229 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('../images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 15px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+header nav ul li a {
+  padding: 10px 20px;
+  background-color: #3b3b3b;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.1em;
+  text-shadow: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: #6a1b9a;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+h1 {
+  font-size: 3em;
+  margin: 20px 0;
+  font-weight: 700;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+main {
+  padding: 20px;
+}
+
+.home-block {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 40px auto;
+  max-width: 700px;
+  border-radius: 10px;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 15px 25px;
+  margin: 10px;
+  font-size: 1.1em;
+  background-color: #6a1b9a;
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-shadow: none;
+  transition: all 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #8e24aa;
+  transform: scale(1.1) rotate(-2deg);
+  color: #ffffff;
+}
+
+.evo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  width: 350px;
+  padding: 30px;
+  box-shadow: 0 0 20px #000;
+  transition: transform 0.3s ease, background-color 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 70%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 2em;
+  margin: 15px 0 5px 0;
+}
+
+.card p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Type-specific background color accents */
+.card.psychic { background-color: rgba(186, 85, 211, 0.6); }
+.card.fire    { background-color: rgba(255, 69, 0, 0.6); }
+.card.ice     { background-color: rgba(135, 206, 235, 0.6); }
+.card.electric{ background-color: rgba(255, 255, 102, 0.6); color: #000; }
+.card.grass   { background-color: rgba(144, 238, 144, 0.6); color: #000; }
+.card.fairy   { background-color: rgba(255, 182, 193, 0.6); color: #000; }
+.card.dark    { background-color: rgba(60, 60, 60, 0.8); }
+.card.water   { background-color: rgba(70, 130, 180, 0.6); }
+
+/* Override text color inside type-specific cards */
+.card h2,
+.card p {
+  color: #ffffff !important;
+  text-shadow: none !important;
+  font-weight: 600;
+}
+
+.card.electric h2,
+.card.electric p,
+.card.grass h2,
+.card.grass p,
+.card.fairy h2,
+.card.fairy p {
+  color: #000000 !important;
+}
+
+.nav-buttons {
+  margin-top: 20px;
+}
+
+.nav-buttons button {
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 0 10px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-buttons button:hover {
+  background-color: #8e24aa;
+  transform: scale(1.1);
+}
+
+.animate-entry {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+[data-role="page"] {
+  background: url('../images/background3.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* About section font color fix */
+#about main {
+  color: #ffffff;
+}
+
+.home-block p {
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-shadow: none !important;
+}
+
+
+.contact-block {
+  background-color: rgba(0, 0, 0, 0.6);
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.contact-text {
+  font-size: 1.5em;
+  color: #e0e0e0;
+  margin: 20px 0;
+}
+
+.contact-text a {
+  color: #9dcfff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-text a:hover {
+  color: #ffffff;
+}
