@@ -7,7 +7,7 @@ $(document).ready(function () {
       strongAgainst: ["Fighting", "Poison"],
       weakTo: ["Bug", "Ghost", "Dark"],
       evolutionMethod: "Evolve Eevee with high friendship during the day (without knowing a Fairy-type move).",
-      image: "../images/espeon.png"
+      image: "/images/espeon.png"
     },
     {
       name: "Flareon",
@@ -16,7 +16,7 @@ $(document).ready(function () {
       strongAgainst: ["Grass", "Bug", "Ice", "Steel"],
       weakTo: ["Water", "Rock", "Ground"],
       evolutionMethod: "Use a Fire Stone on Eevee.",
-      image: "../images/flareon.png"
+      image: "/images/flareon.png"
     },
     {
       name: "Glaceon",
@@ -25,7 +25,7 @@ $(document).ready(function () {
       strongAgainst: ["Dragon", "Flying", "Grass", "Ground"],
       weakTo: ["Fire", "Fighting", "Rock", "Steel"],
       evolutionMethod: "Level up near an Ice Rock or use an Ice Stone on Eevee.",
-      image: "../images/glaceon.png"
+      image: "/images/glaceon.png"
     },
     {
       name: "Jolteon",
@@ -34,7 +34,7 @@ $(document).ready(function () {
       strongAgainst: ["Flying", "Water"],
       weakTo: ["Ground"],
       evolutionMethod: "Use a Thunder Stone on Eevee.",
-      image: "../images/jolteon.png"
+      image: "/images/jolteon.png"
     },
     {
       name: "Leafeon",
@@ -43,7 +43,7 @@ $(document).ready(function () {
       strongAgainst: ["Water", "Ground", "Rock"],
       weakTo: ["Fire", "Flying", "Bug", "Ice", "Poison"],
       evolutionMethod: "Level up near a Moss Rock or use a Leaf Stone on Eevee.",
-      image: "../images/leafeon.png"
+      image: "/images/leafeon.png"
     },
     {
       name: "Sylveon",
@@ -52,7 +52,7 @@ $(document).ready(function () {
       strongAgainst: ["Dragon", "Dark", "Fighting"],
       weakTo: ["Poison", "Steel"],
       evolutionMethod: "Evolve Eevee with high friendship while it knows a Fairy-type move.",
-      image: "../images/sylveon.png"
+      image: "/images/sylveon.png"
     },
     {
       name: "Umbreon",
@@ -61,7 +61,7 @@ $(document).ready(function () {
       strongAgainst: ["Ghost", "Psychic"],
       weakTo: ["Fighting", "Bug", "Fairy"],
       evolutionMethod: "Evolve Eevee with high friendship during the night.",
-      image: "../images/umbreon.png"
+      image: "/images/umbreon.png"
     },
     {
       name: "Vaporeon",
@@ -70,7 +70,7 @@ $(document).ready(function () {
       strongAgainst: ["Fire", "Rock", "Ground"],
       weakTo: ["Electric", "Grass"],
       evolutionMethod: "Use a Water Stone on Eevee.",
-      image: "../images/vaporeon.png"
+      image: "/images/vaporeon.png"
     }
   ];
 
